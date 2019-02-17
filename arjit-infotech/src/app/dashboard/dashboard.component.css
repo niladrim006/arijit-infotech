@@ -1,0 +1,9 @@
+.side-nav {
+    display: inline-block;
+    height: 100% !important;
+    background-color: #d2d6d8 !important;
+    color: black;
+    z-index: 2;
+    position: absolute
+
+}

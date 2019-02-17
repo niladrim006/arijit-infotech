@@ -1,0 +1,108 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="row bg-heading">
+      <span class="pan-heading">Online PAN Application</span>
+    </div>
+    <form class="pan-form">
+      <div class="row type">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="email">Application Type :</label>
+            <select class="form-control" id="type">
+              <option> ------ Please Select ------</option>
+              <option>New PAN - India Citizen (form 49A)</option>
+              <option>New PAN - Forign Citizen (form 49AA)</option>
+              <option>Changes or Correction in existing PAN Data /
+                Reprint of PAN Card (No changes in existing PAN Data)</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="pwd">Category :</label>
+            <select class="form-control" id="category">
+              <option> ------ Please Select ------</option>
+              <option>INDIVIDUALS</option>
+              <option>ASSOCIATE OF PERSON</option>
+              <option>BODY OF INDIVIDUALS</option>
+              <option>COMPANY</option>
+              <option>TRUST</option>
+              <option>LIMITED LIABILITY PARTNERSHIP</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <span class="pan-sub-heading">Applicant Information</span>
+      </div>
+
+      <div class="row type">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="email">Title :</label>
+            <select class="form-control" id="type">
+              <option> ------ Please Select ------</option>
+              <option>Shri</option>
+              <option>Smt</option>
+              <option>Kumari</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- </div> -->
+      <div class="row type">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="email">Last Name / Surname :</label>
+            <input type="text" class="form-control" id="lName" placeholder="Enter Last Name" name="lName">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="email">First Name :</label>
+            <input type="text" class="form-control" id="lName" placeholder="Enter First Name" name="lName">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="email">Middle Name :</label>
+            <input type="text" class="form-control" id="lName" placeholder="Enter Middle Name" name="lName">
+          </div>
+        </div>
+      </div>
+      <div class="row type">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="email">Date Of Birth / Incorporation/ Formation :</label>
+            <input type="text" class="form-control" id="lName" placeholder="DOB" name="lName">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="email">Email Id :</label>
+            <input type="text" class="form-control" id="lName" placeholder="Enter Email " name="lName">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label for="email">Mobile Number :</label>
+            <input type="text" class="form-control" id="lName" placeholder="Enter Phone Number" name="lName">
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row type" *ngIf=''>
+          <div class="col-md-4">
+              <div class="form-group">
+                <label for="email">PAN Number :</label>
+                <input type="text" class="form-control" id="lName" placeholder="Enter PAN Number" name="lName">
+              </div>
+            </div>
+      </div> -->
+      <div class="row right">
+          <button type="button" class="btn btn-default btn-lg m-10" (click)='clear()'>Clear</button>
+          <button type="button" class="btn btn-primary btn-lg m-10 " (click)='submit()'>Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

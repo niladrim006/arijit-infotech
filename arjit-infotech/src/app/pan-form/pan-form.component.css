@@ -1,0 +1,35 @@
+.pan-heading {
+    font-size: 30px !important;
+}
+.col-md-5 {
+    margin-top: 10px !important
+}
+.type {
+    background-color: rgb(225, 237, 248);
+    margin-top: 20px;
+}
+.bg-heading {
+    background-color: #f1f1f1
+
+}
+.pan-form label {
+color: rgb(98, 100, 102);
+font-weight: 700
+}
+.pan-sub-heading {
+    font-size: 22px;
+    padding-left: 15px;
+    margin: 10px 0px;
+}
+.m-10 {
+    margin: 20px
+}
+.right {
+    position: absolute;
+    right: 50px;
+}
+
+.blue {
+    background-color: rgb(225, 237, 248);
+    width: 100%;
+}

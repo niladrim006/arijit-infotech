@@ -1,0 +1,26 @@
+
+.side-bar {
+width: 107%;
+}
+
+.dash-header {
+    padding-left: 5px;
+    background-color:  rgb(205, 224, 224)
+}
+
+.no-list-style {
+    list-style: none !important;
+}
+.side-bar-ele {
+    cursor: pointer;
+    padding: 8px 0px 8px 15px;
+    font-size: 19px !important;
+}
+
+.side-bar-ele:hover {
+    cursor: pointer;
+    padding: 8px 0px 8px 24px;
+    background-color: rgb(198, 204, 204);
+    font-size: 19px !important;
+}
+

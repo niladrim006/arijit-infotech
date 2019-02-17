@@ -1,0 +1,10 @@
+a {
+    cursor: pointer;
+}
+.right {
+    float: right;
+}
+.right-corner {
+    position: absolute;
+    right: 10px;
+}

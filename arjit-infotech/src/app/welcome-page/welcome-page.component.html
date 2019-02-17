@@ -1,0 +1,171 @@
+<div class="bgded overlay" style="background-image:url('https://images.pexels.com/photos/1516704/pexels-photo-1516704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left">
+        <img class="logo" src="../assets/image/logo1.png">
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li *ngIf="!userLoggedIn"><a href="#login">Login</a></li>
+          <li *ngIf="userLoggedIn" ><a (click)='toDashBoard()'>Dashboard</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="wrapper" id="home">
+    <div id="pageintro" class="hoc clear">
+      <article>
+        <h2 class="heading">One solution for PAN card and All type of Recharge</h2>
+        <p>Now in your Locality at your service. PAN Card, Mobile Recharge, Dish Recharge and Many More!!</p>
+        <footer><a class="btn" href="#">Volutpat tellus</a></footer>
+      </article>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper row3" id="about">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <div class="sectiontitle">
+      <h6 class="heading">Welcome To Arjit Infotech!!</h6>
+      <p>One More Step towards Digital India, For better Future..</p>
+    </div>
+    <div class="group">
+      <div class="one_half first">
+        <p class="font-xs nospace">Arjit Infotech</p>
+        <h6 class="heading">Official Partner of NSDL for pan card!</h6>
+        <p>We are working with NSDL for PAN Card application, modification and reprint of the old PAN card.</p>
+        <p class="btmspace-30">Also Mobile Recharge, TV recharge and other digital services are provided by Us&hellip;</p>
+        <footer><a class="btn" href="#about">Read More &raquo;</a></footer>
+      </div>
+      <div class="one_half">
+        <ul class="nospace group">
+          <li class="one_half first btmspace-50">
+            <article>
+              <h6 class="heading font-x1"><a href="#">Arjit Haldar</a></h6>
+              <p class="nospace">Official partner and Founder Of Arjit Infotech&hellip;</p>
+            </article>
+          </li>
+          <li class="one_half btmspace-50">
+            <article>
+              <h6 class="heading font-x1"><a href="#">Arvind Tiwari</a></h6>
+              <p class="nospace">Managar and Co-Founder of Arjit Infotech&hellip;</p>
+            </article>
+          </li>
+          <li class="one_half first">
+            <article>
+              <h6 class="heading font-x1"><a href="#">Biki Biswas</a></h6>
+              <p class="nospace">Co-Founder and Marketing Manager&hellip;</p>
+            </article>
+          </li>
+          <!-- <li class="one_half">
+            <article>
+              <h6 class="heading font-x1"><a href="#">Lectus semper</a></h6>
+              <p class="nospace">Eget ipsum a auctor fringilla magna integer laoreet justo turpis et bibendum&hellip;</p>
+            </article>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <!-- / main body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<div id="contact" class="wrapper bgded overlay" style="background-image:url('https://images.pexels.com/photos/33999/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+  <article class="hoc container center">
+    <div class="sectiontitle" style="margin-bottom:30px;">
+      <h6 class="heading">Be Our Partner!</h6>
+      <p>Get in touch with us! Send Your Query!</p>
+    </div>
+    <p><button class="btn medium" (click)='showContactForm()'>{{contactButton}} &raquo;</button></p>
+    <div *ngIf='showContact' class="contact-form">
+
+      <form>
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-lg-3"></div>
+          <div class="col-md-6 col-sm-6 col-lg-6">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="sbjct">Subject:</label>
+              <input type="text" class="form-control" id="sbjct" autocomplete="off">
+            </div>
+            <div class="form-group">
+              <label for="comment">Comment:</label>
+              <textarea class="form-control" rows="5" id="comment"></textarea>
+            </div>
+            <div class="right">
+                <div class="btn-group pd-20">
+                  <button type="button" class="btn btn-default btn-lg">Clear</button>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-success btn-lg">Submit</button>
+                </div>
+
+              </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-lg-3"></div>
+        </div>
+      </form>
+    </div>
+  </article>
+</div>
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear">
+    <div class="one_half first">
+      <h6 class="heading">Arjit Infotech </h6>
+      <p class="btmspace-30">One more step towards digital india.</p>
+      <ul class="nospace linklist contact">
+        <li><i class="fa fa-map-marker"></i>
+          <address>
+            Main Road Dornapal &amp; Dist Sukma, CG, 494122
+          </address>
+        </li>
+        <li><i class="fa fa-phone"></i> +91 9876543210</li>
+        <li><i class="fa fa-envelope-o"></i> info@joinmyindia.com</li>
+      </ul>
+    </div>
+    <div class="one_quarter">
+      <h6 class="heading">Service Provided By Us</h6>
+      <ul class="nospace linklist">
+        <li><p href="#">Pan Card Solution</p></li>
+        <li><p href="#">Mobile Recharge </p></li>
+        <li><p href="#">TV Recharge</p></li>
+        <li><p href="#">Agent for Pan card</p></li>
+      </ul>
+    </div>
+    <div *ngIf="!userLoggedIn" class="one_quarter" id="login">
+      <h6 class="heading">Agent Login !!</h6>
+      <form >
+        <fieldset>
+          <legend>Registered Users Only:</legend>
+          <div class="form-group">
+              <input type="text" [(ngModel)]='userEmail' name="userId" placeholder="Email" class="form-control" id="name" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <input type="password" [(ngModel)]='userPassword' name="password" placeholder="Password" class="form-control" id="password" autocomplete="off">
+              </div>
+        </fieldset>
+      </form>
+      <button class="btn" (click)='login(userEmail, userPassword)'>Login</button>
+    </div>
+    <!--  -->
+  </footer>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear">
+    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">joinmyindia.com</a></p>
+    <p class="fl_right">Provided by <a target="_blank" href="#home" >Make in India</a></p>
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
